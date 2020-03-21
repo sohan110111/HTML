@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript html pages more dynamic and interactive.</h1>
+    <p id="demo"></p>
+    <p id="demo3">Here this font change when click change style button</p>
+    <button type="button" onclick="styleChange()">change style</button>
+    <button type="button" onclick="myFunction()">click me!</button>
+    <p id="demo2">This is a demonstration.</p>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        function myFunction() {
+            document.getElementById("demo2").innerHTML = "Hello JavaScript!";
+        }
+        function styleChange() {
+            document.getElementById("demo3").style.fontSize = "25px";
+        }
+        function lightOnOff(sw) {
+            var pic;
+            if (sw == 0) {
+                pic = "images/dark.png";
+            }
+            else {
+                pic = "images/light.png";
+            }
+            document.getElementById("myImage").src = pic;
+        }
+    </script>
+    <noscript>Your, browser does not support JavaScript!</noscript>
+    <img id="myImage" src="images/dark.png" alt="light off image" >
+    <p>
+        <button type="button" onclick="lightOnOff(0)">light off</button>
+        <button type="button" onclick="lightOnOff(1)">light on</button>
+    </p>
+    <footer>
+        note 1: script defines clint side script. <br> note 2: noscript an alternative content for users that don't support clint side scripts.
+    </footer>
+</body>
+</html>
