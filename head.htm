@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free web tutorials.">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+    <meta name="author" content="Hege Rafsnes">
+    <meta http-equiv="refresh" content="30">
+    <title>Head</title>
+    <base target="_blank">
+
+    <link rel="stylesheet" href="example.css">
+    <style>
+        body {
+            background-color: yellow;
+        }
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 is standard, it can be omitted html, head, body tag.</h1>
+    <p>As a familiar web developer, html, head, body should not be omitted.</p>
+    <p id="demo">default</p>
+    <button type="button" onclick="myFunction()"> button </button>
+    <img src="images/dark.png" alt="example images">
+    <p>Since we have specified a base URL, the browser will look for the image "html5.gif" at "http://www.w3schools.com/image.gif"</p>
+    <p>
+        <a href="http://www.w3schools.com">w3schools.com</a>
+    </p>
+    <p>The link above opens in a new window. This is because the base target is set to "_blank"</p>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "dynamic";
+        }
+    </script>
+</body>
+</html>
