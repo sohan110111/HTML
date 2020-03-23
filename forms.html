@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <p>HTML forms element are different types of input elements, checkboxes, radio buttons, submit buttons and more.</p>
+    <form>
+        First name : <br>
+        <input type="text" name="firstname"> <br>
+        Last name : <br>
+        <input type="text" name="lastname">
+    </form>
+
+    <p>Note that the form itself is not visible.</p>
+    <p>Also note that the default width of the text input field is 20 characters.</p>
+    <h1>Here show radio button.</h1>
+    <p>radio button let a user select ONE of a limited number of choices.</p>
+    <form>
+        <input type="radio" name="Gender" value="male" chacked> male <br>
+        <input type="radio" name="Gender" value="female"> female <br>
+        <input type="radio" name="Gender" value="other"> other 
+    </form>
+
+   <h1>Here show submit button</h1>
+   <form action="http://www.w3schools.com/action_page.php" method="GET">
+        First name : <br>
+        <input type="text" name="firstname" value="Mickey"> <br>
+        Last Name : <br>
+        <input type="text" name="lastname" value="Mouse"> <br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>If you click the submit button, the form data will be sent to a page called "action_page.php"</p>
+    <h1>The action attributes defines when the form is submitted.</h1>
+    <p>The method attributes specifies the HTTP method (GET or POST) to be used when submitting the forms.</p>
+    <h1>Fieldset element groups related data in a form.</h1>
+    <form action="http://www.w3schools.com/action_page.php">
+        <fieldset>
+            <legend>Personal information : </legend>
+            First name : <br>
+            <input type="text" name="firstname" value="Mickey"> <br>
+            Last name : <br>
+            <input type="text" name="lastname" value="Mouse"> <br>
+            <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <h1>The select element defines a drop-down list:</h1>
+    <form action="http://www.w3schools.com">
+        <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat" selected>Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br><br>
+        <input type="submit">
+    </form>
+    <form action="http://www.w3schools.com">
+        <textarea name="message" cols="30" rows="10">The cat was playing in the garden.
+        </textarea> <br>
+        <input type="submit">
+    </form>
+    <h1>The button element defines a clickable button.</h1>
+    <button type="button" onclick="alert('Hello world!')">Click me!</button>
+</body>
+</html>
